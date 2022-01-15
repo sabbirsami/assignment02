@@ -47,6 +47,57 @@ header .navber .nav a {
 header .navber .nav li {
     list-style: none;
 }
+
+/* HEADER SECTION END  */
+
+/* HERO SECTION START  */
+
+.hero_section{
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+    overflow: hidden;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.hero .hero_info h1{
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 52px;
+    color: #3A3A3A;
+    width: 70%;
+}
+.hero .hero_info p{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    color: #3A3A3A;
+    width: 60%;
+}
+.hero .hero_info a{
+    background-color: #E02C6D;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 20px;
+}
+.hero .hero_info a i{
+    margin-left: 5px;
+}
+.hero .hero_info a:hover i{
+    transform: translateX(5px);
+    transition: .3s;
+}
+
 .hero_img_bg{
     height: 580px;
     width: 580px;
@@ -90,48 +141,6 @@ header .navber .nav li {
     margin-left: 70px;
 }
 
-
-/* HEADER SECTION END  */
-
-/* HERO SECTION START  */
-
-.hero_section{
-    display: flex;
-    justify-content: center;
-    margin: 60px 0;
-}
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-.hero .hero_info h1{
-    font-family: Poppins;
-    font-weight: bold;
-    font-size: 52px;
-    color: #3A3A3A;
-    width: 70%;
-}
-.hero .hero_info p{
-    font-family: Poppins;
-    font-weight: 600;
-    font-size: 16px;
-    color: #3A3A3A;
-    width: 60%;
-}
-.hero .hero_info a{
-    background-color: #E02C6D;
-    font-family: Poppins;
-    font-weight: 400;
-    font-size: 16px;
-    text-decoration: none;
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 30px;
-    display: inline-block;
-    margin-top: 20px;
-}
 
 /* HERO SECTION END  */
 
@@ -416,6 +425,10 @@ header .navber .nav li {
     .container{
         width: 565px;
     }
+    .navber_section .container{
+        width: 400px;
+        text-align: center;
+    }
     .hero {
         display: block;
     }
@@ -433,7 +446,7 @@ header .navber .nav li {
         margin-left: 75px;
     }
     .hero_img img {
-        width: 40%;
+        width: 45%;
         margin-top: 70px;
         margin-left: 140px;
     }
@@ -479,6 +492,12 @@ header .navber .nav li {
     }
     .hero_img_bg img{
         display: none;
+    }
+    .brand_section{
+        display: none;
+    }
+    header .navber {
+        justify-content: center;
     }
 
 }
