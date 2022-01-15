@@ -51,6 +51,14 @@ header .navber .nav li {
     height: 580px;
     width: 580px;
     border-radius: 50%;
+    z-index: -1;
+    position: relative;
+}
+
+.hero_section:hover .hero_img_bg{
+    height: 580px;
+    width: 580px;
+    border-radius: 50%;
     background-color: #E02C6D;
     opacity: .3;
     animation: hero 1s ease-in-out .5s infinite alternate;
@@ -312,19 +320,14 @@ header .navber .nav li {
 /* responsive section */
 @media (max-width: 1312px) {
     .container{
-        width: 1200px;
+        width: 885px;
     }
     .hero .hero_info h1{
-        width: 95%;
+        width: 100%;
+        font-size: 40px;
     }
     .hero .hero_info p{
-        width: 70%;
-    }
-}
-
-@media (max-width: 992px){
-    .container{
-        width: 885px;
+        width: 90%;
     }
     .hero_img_bg{
         height: 500px;
@@ -334,6 +337,56 @@ header .navber .nav li {
         width: 40%;
         margin-top: 60px;
         margin-left: 55px;
+    }
+    .map {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .map_info {
+        margin-left: 65px;
+    }
+    .maps .map iframe {
+        margin-left: 35px;
+    }
+    
+}
+
+@media (max-width: 992px){
+    .maps .container{
+        width: 825px;
+    }
+    .container{
+        width: 800px;
+    }
+    .brand_section .container{
+        border: 0;
+    }
+    .brand_section .brand img {
+        margin: 0 12px;
+    }
+    .products_section .products_title h1{
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 45px;
+        color: #3A3A3A;
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+    .nav {
+        display: none;
+    }
+    .hero_section:hover .hero_img_bg{
+        height: 350px;
+        width: 350px;
+    }
+    .hero_img_bg{
+        height: 350px;
+        width: 350px;
+    }
+    .hero_img img {
+        width: 35%;
+        margin-top: 50px;
+        margin-left: 50px;
     }
     .hero .hero_info h1{
         width: 100%;
@@ -350,6 +403,9 @@ header .navber .nav li {
     }
     .map_info {
         padding: 40px;
+    }
+    .hero_img_bg img{
+        display: none;
     }
 }
 
@@ -384,6 +440,12 @@ header .navber .nav li {
     .hero_img {
         margin-top: 25px;
     }
+    .hero_info {
+        text-align: center;
+    }
+    .maps .map iframe {
+        margin-left: 0;
+    }
     .brand_section .container{
         width: 610px;
     }
@@ -415,4 +477,8 @@ header .navber .nav li {
     .map {
         width: 100%;
     }
+    .hero_img_bg img{
+        display: none;
+    }
+
 }
