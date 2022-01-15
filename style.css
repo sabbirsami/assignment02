@@ -6,15 +6,14 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-/* COMMON SECTION */
-.container{
-    width: 1440px;
-}
 
 /* HEADER SECTION START  */
 .navber_section{
     display: flex;
     justify-content: center;
+}
+.container{
+    width: 1440px;
 }
 header .navber {
     display: flex;
@@ -47,6 +46,36 @@ header .navber .nav a {
 
 header .navber .nav li {
     list-style: none;
+}
+.hero_img_bg{
+    height: 580px;
+    width: 580px;
+    border-radius: 50%;
+    background-color: #E02C6D;
+    opacity: .3;
+    animation: hero 1s ease-in-out .5s infinite alternate;
+    animation-play-state: running;
+}
+@keyframes hero{
+    0% {
+        transform: scale(.8);
+        background-color: #E02C6D;
+        opacity: .5;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.hero_img_bg {
+    position: relative;
+    top: 0;
+}
+
+.hero_img img {
+    position: absolute;
+    z-index: 1;
+    margin-top: 80px;
+    margin-left: 70px;
 }
 
 
