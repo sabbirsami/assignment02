@@ -120,7 +120,7 @@ header .navber .nav li {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 110px;
+    margin-bottom: 70px;
 }
 .products_section .container{
     width: 1240px;
@@ -188,3 +188,89 @@ header .navber .nav li {
     margin: 25px;
 }
 /* PRODUCTS SECTION EDN  */
+
+/* MAP SECTION START  */
+.maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.maps h2 {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Poppins';
+    font-weight: 800;
+    margin: 30px 0;
+}
+
+.location {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.map {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.maps .map iframe {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    height: 400px;
+}
+.map_info p {
+    padding: 5px;
+    font-size: 20px;
+}
+
+
+/* MAP SECTION END  */
+
+/* FOOTER SECTION START  */
+
+.footer_section{
+    background-color: #0A0826;
+}
+.footer_info h3 {
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer_info p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Poppins';
+}
+
+.social_icon .icon i {
+    color: #ffffff;
+    font-size: 26px;
+}
+
+.social_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    background-color: #22213C;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 26px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.footer_info {
+    padding: 50px;
+}
+/* FOOTER SECTION END  */
